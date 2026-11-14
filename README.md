@@ -8,7 +8,7 @@
 
 ## 下载
 
-到 [Releases](../../releases) 下载最新 `MeetingStoneAutoMatch-<版本>.zip`，解压后把顶层 `MeetingStoneAutoMatch/` 放进：
+到 [Releases](https://github.com/unlessbamboo/MeetingStoneAutoMatch-feedback/releases) 下载最新 `MeetingStoneAutoMatch-<版本>.zip`，解压后把顶层 `MeetingStoneAutoMatch/` 放进：
 
 ```text
 World of Warcraft/_classic_titan_/Interface/AddOns/   # 时光服
@@ -19,7 +19,7 @@ World of Warcraft/_forever_/Interface/AddOns/          # 无限服
 
 ## 反馈问题
 
-点 [New issue](../../issues/new/choose) 选「问题反馈 / Bug report」，按表单填写。提交前请先搜索是否已有相同问题。
+点 [New issue](https://github.com/unlessbamboo/MeetingStoneAutoMatch-feedback/issues/new/choose) 选「问题反馈 / Bug report」，按表单填写。提交前请先搜索是否已有相同问题。
 
 不会用 GitHub 也可以：在获取本插件的平台项目页留言，作者会转录到这里。
 
@@ -50,6 +50,6 @@ World of Warcraft/_forever_/Interface/AddOns/          # 无限服
 
 ## English
 
-Download the latest `MeetingStoneAutoMatch-<version>.zip` from [Releases](../../releases) and extract `MeetingStoneAutoMatch/` into your `Interface/AddOns/`. Remove private information (character names, realm, chat, account details) before posting logs or screenshots.
+Download the latest `MeetingStoneAutoMatch-<version>.zip` from [Releases](https://github.com/unlessbamboo/MeetingStoneAutoMatch-feedback/releases) and extract `MeetingStoneAutoMatch/` into your `Interface/AddOns/`. Remove private information (character names, realm, chat, account details) before posting logs or screenshots.
 
 This repository hosts release packages and the issue tracker only; the source is not public. Free to use, All Rights Reserved — see [LICENSE](LICENSE).
