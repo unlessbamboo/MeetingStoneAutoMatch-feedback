@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+# NGA 反馈帖地址建立后，取消下面注释并填入真实 URL（不要提前填占位链接）：
+# contact_links:
+#   - name: NGA 反馈帖（国内直连）
+#     url: https://bbs.nga.cn/thread.php?fid=...
+#     about: 不会用 GitHub 就在这里按模板回帖

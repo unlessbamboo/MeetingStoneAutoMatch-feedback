@@ -1,0 +1,99 @@
+name: 问题反馈 / Bug report
+description: 报告集合石 · 自动匹配版的错误、界面异常或与服务器的兼容问题
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先搜索已有 issue，避免重复。
+
+        **不会用 GitHub？** 在获取本插件的平台项目页留言即可，把下面的内容贴过去，作者会转录到 issue。
+
+        必填的「日志与自检报告」获取方式：
+        1. 游戏内输入 `/console scriptErrors 1` 打开 Lua 报错弹窗（已装 BugSack / BugGrabber 可跳过）
+        2. 复现问题后输入 `/jjh diag`，等自检跑完
+        3. 点窗口底栏「全选复制」，按 `Ctrl+C`
+        4. 粘贴到这里；内容较长可存成 `report.txt` 拖进输入框
+
+  - type: input
+    id: version
+    attributes:
+      label: 插件版本
+      description: 角色选择界面「插件」列表里的版本，或游戏内 `/jjh status`
+      placeholder: "0.3.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: 客户端
+      options:
+        - 时光服（_classic_titan_）
+        - 无限服（_forever_）
+        - 两个客户端都有问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从登录开始，写清点了哪个页签、哪个按钮、当时是否在队伍里 / 战斗中 / 刚重载
+      placeholder: |
+        1. 打开活动列表 → 地下城页签
+        2. 选中某条活动，点「申请」
+        3. ……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / 实际结果
+      placeholder: |
+        期望：
+        实际：
+    validations:
+      required: true
+
+  - type: textarea
+    id: report
+    attributes:
+      label: 日志与自检报告
+      description: "`/jjh diag` →「全选复制」→ Ctrl+C；请保留原始行，不要只贴一句结论"
+      render: text
+      placeholder: "MeetingStoneAutoMatch（集合石 · 自动匹配版）日志与自检报告 ……"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 其他环境信息
+      description: 游戏版本号、是否装了同类插件 / 整合包 / !Pig / BugSack、队伍人数、最近一次 `/reload` 前后
+      placeholder: |
+        游戏版本：1.x.x (build xxxxx)
+        其他插件：大脚整合包 + BugSack
+        队伍：5 人小队，本人是团长
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图（可选）
+      description: 拖入图片。请先遮挡角色名、服务器、聊天与账号信息
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 已遮挡角色名、服务器、聊天记录与账号等个人信息
+          required: true
+        - label: 日志来自出问题的同一客户端与同一版本，且没有手动改写错误行
+          required: true
